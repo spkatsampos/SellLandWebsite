@@ -1,0 +1,104 @@
+﻿header, nav, footer, section, article
+          {
+          display : block; /* Pages use HTML5 - therefore block declaration */
+          }
+    body
+          {
+          margin:0;
+          padding:0;
+          border:0;     /* This removes the border around the viewport in old versions of IE */
+          width:100%;
+          height:100%;
+          background:#fff;
+          font-family: 'Trebuchet MS', Arial, Helvetica, Sans-serif;
+          color: #046380;
+          min-width:600px;      /* Minimum width of layout */
+                  /* The min-width property does not work in old versions of Internet Explorer */
+          }
+
+        header
+          {
+          clear:both;
+          float:left;
+          width:100%;
+          border-bottom:3px solid #046380;
+          }
+
+        header h1
+          {
+          padding:.1em  0 .1em 0.5em;
+          }
+
+        nav
+          {
+            float:left;
+            width:100%;
+            background:#cee0e0;
+            border-bottom:3px solid #046380;
+            overflow:hidden;
+            position:relative;
+          }
+
+        nav ul
+          {
+            clear:left;
+            float:left;
+            list-style:none;
+            margin:0;
+            padding:0;
+            position:relative;
+            left:50%;
+            text-align:center;
+          }
+
+        nav ul li
+          {
+            display:block;
+            float:left;
+            list-style:none;
+            margin:0;
+            padding:0, 0.5em ;
+            position:relative;
+            right:50%;
+          }
+
+        nav ul li a
+          {
+            display:block;
+            margin:0 0 0 1px;
+            padding:3px 10px;
+            background:#cee0e0;
+            color:#046380;
+            text-decoration:none;
+            font-weight: 500;
+            line-height:1.3em;
+          }
+
+        nav ul li a:hover
+          {
+            background:#369;
+            color:#fff;
+          }
+        nav ul li a.active,
+        nav ul li a.active:hover
+          {
+            color :#fff;
+            background:#046380;
+            font-weight:bold;
+          }
+
+        #content
+            {
+            clear: both;
+            }
+
+        #content p
+            {
+            margin-left: 2em;
+            padding-top: 1em;
+        }
+
+        .button { margin-left: 6em; margin-top: 0.5em; }
+          .textbox { margin-top : 0.5em; }
+          fieldset { width : 16em; }
+          fieldset label { display:inline-block; width:6em; padding-left:0.5em;}

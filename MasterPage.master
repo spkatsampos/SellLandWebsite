@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+      <form id="form1" runat="server">
+      <header><center><h1>Erehwon - Land for Sale</h1></center>
+      </header>
+      <nav>
+          <nav>
+      <ul>
+        <li>
+          <asp:HyperLink ID="Home" runat="server"
+            NavigateUrl="~/HomePage.aspx">Home</asp:HyperLink>
+        </li>
+        
+           <li>
+          <asp:HyperLink ID="Cart" runat="server"
+            NavigateUrl="~/Cart.aspx">Cart</asp:HyperLink>
+        </li>
+          <li>
+          <asp:HyperLink ID="Login" runat="server"
+            NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
+        </li>
+           <li>
+               <right>
+               <asp:Button ID="Button1" runat="server" Text="Logout" OnClick="Button1_Click" />
+               </right>
+        </li>
+            
+             
+      </ul>
+      </nav>
+           <asp:Label ID="WelcomeLabel" runat="server" ForeColor="#000099" Font-Bold="True"></asp:Label>
+      </nav>
+      <div id="content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+      </div>
+      </form>
+    </body>
+</html>
